@@ -8,10 +8,20 @@ const contactBlockEl = document.querySelector('#contacts-block');
 buttonEl.addEventListener('click', onClick);
 
 function onClick() {
-	let blockElementEl = document.createElement('p');
-	blockElementEl.textContent = inputFirstNameEl.value + ' ' + inputLastNameEl.value + ' ' + inputPhoneEl.value;
-	contactBlockEl.append(blockElementEl);
-	inputFirstNameEl.value = '';
-	inputLastNameEl.value = '';
-	inputPhoneEl.value = '';
+	const firstNameData = inputFirstNameEl.value.trim();
+	const lastNameData = inputLastNameEl.value.trim();
+	const phoneData = inputPhoneEl.value.trim();
+	if (firstNameData && lastNameData && inputPhoneEl.value) {
+		let blockElementEl = document.createElement('p');
+		blockElementEl.textContent = firstNameData + ' ' + lastNameData + ' ' + phoneData;
+		contactBlockEl.append(blockElementEl);
+		inputFirstNameEl.value = '';
+		inputLastNameEl.value = '';
+		inputPhoneEl.value = '';
+	} else {
+		inputFirstNameEl.value = '';
+		inputLastNameEl.value = '';
+		inputPhoneEl.value = '';
+		alert('Please, fill all fealds');
+	}
 }
