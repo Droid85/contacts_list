@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact list</title>
+</head>
+<body>
+    <div class="conteiner">
+        <label for="input-first-name">First name:</label>
+        <input type="text" id="input-first-name" placeholder="Enter your first name">
+        <label for="input-last-name">Last name:</label>
+        <input type="text" id="input-last-name" placeholder="Enter your last name">
+        <label for="input-phone">Tel number:</label>
+        <input type="tel" id="input-phone" pattern="[0-9]{10}" placeholder="0969999999" required>
+        <button id="add-contact-btn">Add contact to list</button>
+    </div>
+    
+    <!-- <table id="contacts-table" class="contacts" border="1px" width="70%">
+        <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Phone number</th>
+        </tr>
+    </table> -->
+    <div id="contacts-block" class="contacts"></div>
+    <script src="script.js"></script>
+</body>
+</html>

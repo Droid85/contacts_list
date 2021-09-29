@@ -1,0 +1,20 @@
+/*.contacts-table {
+    width: 70%;
+    height: 500px;
+    background-color: rgb(243, 243, 243);
+    margin-top: 10px;
+    overflow-x: auto;
+    border: 1px solid #000;
+}*/
+
+.conteiner {
+    margin-bottom: 10px;
+}
+
+.contacts {
+    width: 70%;
+    height: 500px;
+    background-color: rgb(243, 243, 243);
+    overflow-x: auto;
+    border: 1px solid #000;
+}
