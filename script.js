@@ -14,13 +14,10 @@ function onClick() {
 		contactTableEl.insertAdjacentHTML('beforeend', `<tr>
 			<td>${firstNameData}</td><td>${lastNameData}</td>
 			<td>${phoneData}</td></tr>`);
-		inputFirstNameEl.value = '';
-		inputLastNameEl.value = '';
-		inputPhoneEl.value = '';	
 	} else {
-		inputFirstNameEl.value = '';
-		inputLastNameEl.value = '';
-		inputPhoneEl.value = '';
 		alert('Please, fill all fealds');
 	}
+	inputFirstNameEl.value = '';
+	inputLastNameEl.value = '';
+	inputPhoneEl.value = '';
 }
